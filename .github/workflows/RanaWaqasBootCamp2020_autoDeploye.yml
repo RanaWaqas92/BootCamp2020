@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Installing node.js
+    - name: Installing node
     -  uses: action/setup-node@v2-beta
       with:
         node-version: 12   
