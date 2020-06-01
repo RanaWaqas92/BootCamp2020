@@ -12,9 +12,10 @@ jobs:
     - name: Installing node
       uses: actions/setup-node@v2-beta
       with:
-        node-version: 12   
+        node-version: 12
 
     - name: Installing surge
       run: nmp install --global surge
     - name: Deploying using surge
-      run: surge ./ ranawaqasbootcamp2020.surge.sh --token ${{ secrets.SURGE_TOKENKEY }}
+      run: surge ./ ranawaqasbootcamp2020.surge.sh --token ${{ Secrets.SURGE_TOKENKEY }}
+      
