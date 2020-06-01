@@ -11,6 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Installing node
       uses: actions/setup-node@v2-beta
       with:
@@ -19,4 +20,4 @@ jobs:
     - name: Installing surge
       run: nmp install --global surge
     - name: Deploying using surge
-      run: surge ./ ranawaqasbootcamp2020.surge.sh --token $ {{ secrets.SURGE_TOKENKEY }}
+      run: surge ./ ranawaqasbootcamp2020.surge.sh --token ${{ secrets.SURGE_TOKENKEY }}
