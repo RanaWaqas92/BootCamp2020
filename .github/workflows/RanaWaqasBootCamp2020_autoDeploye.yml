@@ -1,9 +1,7 @@
 name: RanaWaqasBootCamp2020
-
 on:
   push:
     branches: [ master ]
-
 jobs:
   build:
 
