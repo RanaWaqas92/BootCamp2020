@@ -17,4 +17,4 @@ jobs:
     - name: Installing surge
       run: nmp install --global surge
     - name: Deploying using surge
-      run: surge ./ ranawaqasbootcamp2020.surge.sh --token ${{secrets.SURGE_TOKENKEY}}
+      run: surge ./ ranawaqasbootcamp2020.surge.sh --token ${{ secrets.SURGE_TOKENKEY }}
